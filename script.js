@@ -634,6 +634,12 @@ setInterval(function () {
 }, 1000);
 
 
+const num= 58457834.45;
+console.log('US: ',new Intl.NumberFormat('en-US').format(num));
+
+console.log('germ: ', new Intl.NumberFormat('en-US').format(num));
+
 
 */
+
 
