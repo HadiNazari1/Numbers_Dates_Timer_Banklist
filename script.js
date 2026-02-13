@@ -660,9 +660,14 @@ const startLogOutTimer= function(){
   timer=setInterval(tick,1000); 
  
 }
+const timemin=120;
+const timetick= function(){
+  const min = String(Math.trunc(time))
+}
 
 
 */
+
 
 
 
