@@ -640,6 +640,29 @@ console.log('US: ',new Intl.NumberFormat('en-US').format(num));
 console.log('germ: ', new Intl.NumberFormat('en-US').format(num));
 
 
+
+const startLogOutTimer= function(){
+  const tick= function(){
+    const min = String(Math.trunc(time/60)).padStart(2,0);
+    const sec = String(time%60).padStart(2,0);
+
+    labelTimer.textContent=`${min}:${sec}`;
+
+    time--;
+
+    if (time===0){
+      clearInterval(timer);
+      labelWelcome.textContent='Log in to get started';
+      containerApp.style.opacity=0;
+    }
+  }
+  tick();
+  timer=setInterval(tick,1000); 
+ 
+}
+
+
 */
+
 
 
